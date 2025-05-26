@@ -44,3 +44,13 @@ header{
     z-index: 1000;
 }
 
+.logo{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #4a1e21;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    user-select: none;
+    margin-left: 1rem;
+}
+
