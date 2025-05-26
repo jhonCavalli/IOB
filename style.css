@@ -221,3 +221,24 @@ nav ul li a:focus{
     font-size: 2rem;
     letter-spacing: 2px;
 }
+
+.footer{
+    background-color: #7e5843;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    user-select: none;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.floating-contact{
+    position: fixed;
+    bottom: fixed;
+    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 1100;
+}
+
