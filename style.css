@@ -9,7 +9,7 @@ body{
     color: #4a1e21;
     line-height: 1.6;
     padding: 10px;
-    overflow: hidden;
+    overflow:scroll;
 }
 spam{
     color: #b08d57;
@@ -124,7 +124,7 @@ nav ul li a:focus{
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    transition: background  0.3s ease;
+    transition: background-color  0.3s ease;
     box-shadow: 0 4px 8px rgba(176, 141, 87, 0.4);
 }
 
