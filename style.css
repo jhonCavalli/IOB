@@ -263,3 +263,16 @@ nav ul li a:focus{
     transform: scale(1.1);
     box-shadow: 0 6px 15px rgba(176, 141, 87, 0.7);
 }
+
+ .floating-btn svg {
+    width: 28px;
+    height: 28px;
+    fill: #fff;
+ }
+
+ .floating-btn[aria-label="Localização"] svg {
+    fill: #fff;
+}
+  .floating-btn[aria-label="WhatsApp"] svg {
+    fill: #fff;
+}
