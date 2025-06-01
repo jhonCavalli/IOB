@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+:root {
+    --primary: #ff6b6b;
+    --secondary: #4ecdc4;
+    --accent: #ffe66d;
+    --dark: #292f36;
+    --light: #f7ff7;
+    --success: #6bcb77;
+    --warning: #ffd166;
+    --danger: #ff5252;
+}
 body{
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -344,81 +356,91 @@ footer {
     font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-    .banner h1 {
-        font-size: 2.2rem;
+    @media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    
-    .banner p {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
         font-size: 1rem;
     }
-    
-    .counter {
+
+    .service-list {
         flex-direction: column;
-        gap: 20px;
     }
-    
-    .modal-header {
+
+    .service-item {
+        flex: 1 1 100%;
+    }
+
+    .footer-content {
         flex-direction: column;
-        text-align: center;
-    }
-    
-    .modal-img {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+        align-items: flex-start;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  .about {
+    padding: 20px 10px;
+  }
 }
 
- body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-
-    form {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 500px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    input, textarea, select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    button {
-      background: #28a745;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #218838;
-    }
-
-    .dev-credit {
-    color: transparent;
-    font-size: 0;
-    transition: all 0.3s;
-
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.copyright:hover .dev-credit{
-    color: #666;
-    font-size: 0.7rem;
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #553f34;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Sobre */
+.about {
+  padding: 30px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
 }
