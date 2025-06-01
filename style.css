@@ -403,44 +403,22 @@ footer {
   }
 }
 
-form {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 600px;
-  margin: 30px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
 
-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-form input,
-form select,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-form button {
-  background-color: #553f34;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* Sobre */
 .about {
   padding: 30px 20px;
   text-align: center;
   max-width: 800px;
   margin: auto;
+}
+
+.dev-credit {
+    color: transparent;
+    font-size: 0;
+    transition: all 0.3s;
+
+}
+
+.copyright:hover .dev-credit{
+    color: #666;
+    font-size: 0.7rem;
 }
