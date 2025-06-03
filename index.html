@@ -26,7 +26,7 @@
         <section class="hero" id="hero" role="banner" aria-label="Seção principal de boas-vindas">
             <h1>Bem-vindo <spam>IOB</spam></h1>
             <p>Excelência em odontológia com cuidado, conforto e tecnologia de ponta.</p>
-            <button class="btn-primary" id="contatoForm1" onclick="scrollToContact()">Agende sua consulta</button>
+            <button class="btn-primary" id="contatoForm1" onclick="openWhatsApp()">Agende sua consulta</button>
           </section>
       <section class="services" id="services" aria-label="Lista de serviços oferecidos">
       <h2>Nosso Serviços</h2>
@@ -98,9 +98,11 @@ Jose do Rio Preto – São Paulo</p>
             </p>
     </footer>
     <script>
-      document.getElementById('contatoForm1').addEventListener('click', function() {
-  window.location.href = '#contatoForm';
-});
+      function openWhatsApp() {
+    const phone = '17991529962';
+    const text = 'Olá, gostaria de agendar uma consulta';
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
+}
     </script>
   
 </body>
